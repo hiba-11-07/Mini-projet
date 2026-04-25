@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – WebCreation Studio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Web<span>Creation</span></a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="temoignage.html">Témoignages</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Démarrer un projet</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+  </div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="section-tag">Parlons de votre projet</div>
+      <h1>Nous <span class="gradient-text">Contacter</span></h1>
+      <p>Prêt à lancer votre projet ? Devis gratuit sous 24h. Nous avons hâte de vous rencontrer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section section-pad">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <h2>Envoyez-nous un message</h2>
+        <p>Remplissez le formulaire ci-dessous et nous vous répondrons sous 24h.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Prénom *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required/>
+              <span class="form-error" id="firstNameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Nom *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Votre nom" required/>
+              <span class="form-error" id="lastNameError"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required/>
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+212 6 00 00 00 00"/>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Type de projet *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Choisissez un service</option>
+              <option value="design">Design UI/UX</option>
+              <option value="dev">Développement Web</option>
+              <option value="other">Autre</option>
+            </select>
+            <span class="form-error" id="serviceError"></span>
+          </div>
+
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet en quelques mots..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+            <span class="char-count" id="charCount">0 / 500</span>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="consent" name="consent" required/>
+              <span class="checkmark"></span>
+              J'accepte que mes données soient utilisées pour me recontacter.
+            </label>
+            <span class="form-error" id="consentError"></span>
+          </div>
+
+          <button type="submit" class="btn-primary large submit-btn" id="submitBtn">
+            <span class="btn-text">Envoyer mon message</span>
+            <span class="btn-spinner" id="btnSpinner">⟳</span>
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Message envoyé !</h3>
+          <p>Merci pour votre message. Notre équipe vous contactera dans les prochaines 24 heures.</p>
+          <a href="index.html" class="btn-primary">Retour à l'accueil</a>
+        </div>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <div class="contact-info-card">
+          <h3>Informations de contact</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <strong>Adresse</strong>
+              <p>Semlalia, Marrakech<br/>Maroc</p>
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:hello@WebCreation.ma">hello@WebCreation.ma</a></p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div>
+              <strong>Horaires</strong>
+              <p>Lun – Ven : 9h00 – 18h00<br/>Sam : 10h00 – 14h00</p>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section dark-section section-pad">
+  <div class="container">
+    <div class="section-header light">
+      <div class="section-tag">Pourquoi nous choisir</div>
+      <h2>Ce que vous gagnez en travaillant avec nous</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">⚡</div>
+        <h4>Réponse rapide</h4>
+        <p>Nous vous répondons sous 24h, toujours. Aucun client ne reste sans réponse.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🎯</div>
+        <h4>Devis transparent</h4>
+        <p>Prix clairs, sans frais cachés. Vous savez exactement ce que vous payez.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🔧</div>
+        <h4>Support continu</h4>
+        <p>Même après livraison, nous restons disponibles pour toute question ou évolution.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🏆</div>
+        <h4>Satisfaction garantie</h4>
+        <p>Si vous n'êtes pas satisfait, nous reprenons le travail. Simple et honnête.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Web<span>Creation</span></a>
+        <p>Agence web créative basée à Marrakech. Nous donnons vie à vos idées digitales.</p>
+      </div>
+      <div class="footer-nav">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="temoignage.html">Témoignages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Design UI/UX</a></li>
+          <li><a href="services.html">Développement Web</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p>📍 Semlalia, Marrakech, Maroc</p>
+        <p>✉️ hello@WebCreation.ma</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy;  2026 WebCreation Studio. Tous droits réservés.</p>
+      
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
