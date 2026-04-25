@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — PixelForge Studio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo"><span class="logo-bracket">{</span>PixelForge<span class="logo-bracket">}</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="blob blob-2"></div>
+    <div class="grid-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-tag">Nos réalisations</span>
+      <h1>Notre <span class="accent">Portfolio</span></h1>
+      <p>Une sélection de projets qui illustrent notre savoir-faire et notre créativité.</p>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <section class="section">
+    <div class="portfolio-filters" id="filters">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="vitrine">Vitrines</button>
+      <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+      <button class="filter-btn" data-filter="app">Applications</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <div class="portfolio-card" data-cat="ecommerce">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#0f172a,#1e3a8a);">
+          <div class="pcard-overlay">
+            <a href="#" class="pcard-btn">Voir le projet</a>
+          </div>
+          <span class="pcard-tag">E-Commerce</span>
+        </div>
+        <div class="pcard-info">
+          <h4>Maison Zara</h4>
+          <p>Boutique mode en ligne · Shopify · 200+ produits</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-cat="vitrine">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#1a1a1a,#3b3b3b);">
+          <div class="pcard-overlay">
+            <a href="#" class="pcard-btn">Voir le projet</a>
+          </div>
+          <span class="pcard-tag">Vitrine</span>
+        </div>
+        <div class="pcard-info">
+          <h4>Studio Archi</h4>
+          <p>Cabinet d'architecture · Design minimaliste</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-cat="app">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#052e16,#16a34a);">
+          <div class="pcard-overlay">
+            <a href="#" class="pcard-btn">Voir le projet</a>
+          </div>
+          <span class="pcard-tag">Application</span>
+        </div>
+        <div class="pcard-info">
+          <h4>EcoTrack Dashboard</h4>
+          <p>SaaS environnemental · React · API temps réel</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-cat="vitrine">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#1c0a00,#c2410c);">
+          <div class="pcard-overlay">
+            <a href="#" class="pcard-btn">Voir le projet</a>
+          </div>
+          <span class="pcard-tag">Vitrine</span>
+        </div>
+        <div class="pcard-info">
+          <h4>La Braise</h4>
+          <p>Restaurant gastronomique · Réservation en ligne</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-cat="ecommerce">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#1a0533,#7c3aed);">
+          <div class="pcard-overlay">
+            <a href="#" class="pcard-btn">Voir le projet</a>
+          </div>
+          <span class="pcard-tag">E-Commerce</span>
+        </div>
+        <div class="pcard-info">
+          <h4>CrystalShop</h4>
+          <p>Bijouterie artisanale · WooCommerce · Multi-devises</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-cat="app">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#0c1a2e,#0284c7);">
+          <div class="pcard-overlay">
+            <a href="#" class="pcard-btn">Voir le projet</a>
+          </div>
+          <span class="pcard-tag">Application</span>
+        </div>
+        <div class="pcard-info">
+          <h4>MedSchedule</h4>
+          <p>Plateforme médicale · Gestion de rendez-vous</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-cat="vitrine">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#0a1628,#1d4ed8);">
+          <div class="pcard-overlay">
+            <a href="#" class="pcard-btn">Voir le projet</a>
+          </div>
+          <span class="pcard-tag">Vitrine</span>
+        </div>
+        <div class="pcard-info">
+          <h4>FinConseil</h4>
+          <p>Cabinet de conseil financier · Lead generation</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-cat="ecommerce">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#14290a,#4ade80);">
+          <div class="pcard-overlay">
+            <a href="#" class="pcard-btn">Voir le projet</a>
+          </div>
+          <span class="pcard-tag">E-Commerce</span>
+        </div>
+        <div class="pcard-info">
+          <h4>GreenBox</h4>
+          <p>Épicerie bio en ligne · Abonnements & paniers</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-cat="app">
+        <div class="pcard-img" style="background:linear-gradient(135deg,#1a0e00,#d97706);">
+          <div class="pcard-overlay">
+            <a href="#" class="pcard-btn">Voir le projet</a>
+          </div>
+          <span class="pcard-tag">Application</span>
+        </div>
+        <div class="pcard-info">
+          <h4>TaskFlow</h4>
+          <p>Outil de gestion de projet · SaaS B2B</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Votre projet sera le prochain ?</h2>
+    <p>Contactez-nous pour une consultation gratuite de 30 minutes.</p>
+    <a href="contact.html" class="btn btn-primary">Parlons de votre projet</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo"><span class="logo-bracket">{</span>PixelForge<span class="logo-bracket">}</span></div>
+        <p>Studio de création web basé à Paris.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Navigation</h5>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 PixelForge Studio. Tous droits réservés.</span></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
